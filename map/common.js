@@ -1,14 +1,11 @@
 const map = L.map('map').setView([51.505, -0.09], 2); // Set a global view for more locations
-
-// Add a tile layer to the map
+// Adding a tile layer to the map
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
-
 // API key and endpoint
 const apiKey = '42f1f8b590d34477927383860e04c5af'; // Your actual API key
 const apiUrl = `https://newsapi.org/v2/top-headlines?country=us&category=general&pageSize=50&apiKey=${apiKey}`; // Increased pageSize to 50
-
 // Expanded coordinates for plotting
 const sampleCoordinates = [
     { lat: 51.505, lon: -0.09 },    // London
@@ -31,7 +28,6 @@ const sampleCoordinates = [
     { lat: -34.6037, lon: -58.3816 }, // Buenos Aires
     { lat: 33.6844, lon: 73.0479 },   // Islamabad
     { lat: 25.276987, lon: 55.296249 }, // Dubai
-    // Additional locations
     { lat: 40.730610, lon: -73.935242 }, // New York City
     { lat: 51.1657, lon: 10.4515 },      // Germany
     { lat: 39.1037, lon: -84.5120 },     // Cincinnati
@@ -66,21 +62,18 @@ const sampleCoordinates = [
     { lat: 38.8951, lon: -77.0369 },     // Washington D.C.
     { lat: 47.6062, lon: -122.3321 }     // Seattle
 ];
-
-// Fetch news data from the API and update the map
+// Fetch news data from the API and update map
 function updateMapWithNews() {
     fetch(apiUrl)
         .then(response => response.json())
         .then(data => {
             console.log(data); // to Check the API response
-
             // Clear existing markers
             map.eachLayer(layer => {
                 if (layer instanceof L.Marker) {
                     map.removeLayer(layer);
                 }
             });
-
             // Add markers for each news article
             data.articles.forEach((article, index) => {
                 console.log(article); // Check each article
@@ -101,9 +94,7 @@ function updateMapWithNews() {
         })
         .catch(error => console.error('Error fetching news data:', error));
 }
-
 // Call the function to fetch news data initially
 updateMapWithNews();
-
 // Refresh the news data every 5 minutes
 setInterval(updateMapWithNews, 300000); // 300000 milliseconds = 5 minutes converted
