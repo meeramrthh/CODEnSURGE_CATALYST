@@ -6,12 +6,14 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
 /* search*/
 /* Styles for the search bar */
 .search-bar {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .news-input {
@@ -317,7 +319,6 @@ nav ul li a{
     padding: 15px;
     text-align: center;
 }
-
 .topHeadlines .left .img{
     width: 100%;
     height: 600px;
@@ -394,7 +395,6 @@ nav ul li a{
     display: flex;
     align-items: center;
 }
-
 .topHeadlines .right .topNews .news .text .title a{
     text-decoration: none;
 }
@@ -444,4 +444,295 @@ nav ul li a{
     background-color: var(--card-color);
     border-radius: 5px;
 }
+.page2 .news .newsBox .newsCard .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.page2 .news .newsBox .newsCard .text{
+    padding: 10px;
+}
+.page2 .news .newsBox .newsCard .text .title a{
+    text-decoration: none;
+}
+.page2 .news .newsBox .newsCard .text .title a p{
+    font-size: 15px;
+    color:var(--text-color);
+    display: inline;
+    cursor: pointer;
+}
+.page2 .news .newsBox .newsCard .title a p:hover{
+    text-decoration: none;
+}
 
+.footer{
+    width: 100%;
+    padding: 50px 50px 0px;
+    background-color: var(--background-color);
+    min-height: 200px;
+}
+.footer .box{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+}
+.footer .box .left{
+    display: flex;
+    justify-content: space-around;
+    padding-right: 20px;
+}
+.footer .box .left .categories > p {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+.footer .box .left .categories div{
+    margin-bottom: 15px;
+    width: max-content;
+}
+.footer .box .left .categories div p{
+    font-size: 20px;
+    color: var(--footer-color-item);
+    cursor: pointer;
+    padding: 0 10px;
+    border-left: 1px solid var( --border-color);
+    border-right: 1px solid var( --border-color);
+    transition: 0.3s;
+}
+.footer .box .left .categories div p:hover{
+    color:var(--text-color);
+    border-left: 1px solid var(--text-color);
+    border-right: 1px solid var(--text-color);
+}
+.footer .contact{
+    margin-left: 10px;
+}
+.footer .contact p{
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+.footer .contact div{
+    font-size: 17px;
+    margin-bottom: 15px;
+    color:var(--secondary-text);
+}
+.footer .icon{
+    margin-top: 20px;
+    padding: 20px;
+}
+.footer .icon i{
+    font-size: 25px;
+    margin-right: 20px;
+    color:var(--secondary-text);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.footer .icon i:hover{
+    color:var(--text-color);
+    transform: scale(1.2);
+}
+.footer .newsletter p{
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+.footer .newsletter .email{
+    display: flex;
+}
+.footer .newsletter .email input{
+    width: 400px;
+    padding: 12px 25px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    margin-right: 20px;
+}
+.footer .newsletter .email button{
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: transparent;
+    border-color:var(--text-color);
+    border-style: solid;
+    color:var(--text-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.footer .newsletter .email button:hover{
+    color: var(--background-color);
+    background-color:var(--text-color);
+}
+.footer .copyrights{
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 1px;
+}
+
+@media (max-width:1024px) {
+    .topHeadlines .right .topNews .news .img {
+        width: 150px;
+    }
+    .topHeadlines .right .topNews .news .text .title a p {
+        font-size: 14px;
+    }
+    .page2 .news .newsBox .newsCard .img {
+        height: 120px;
+    }
+    .page2 .news .newsBox .newsCard .text {
+        padding: 5px;
+    }
+    .page2 .news .newsBox .newsCard .text .title a p {
+        font-size: 14px;
+    }
+    .footer .box .left .categories > p {
+        font-size: 25px;
+    }
+    .footer .contact p {
+        font-size: 25px;
+    }
+    .footer .newsletter p {
+        font-size: 25px;
+    }
+    .footer .newsletter .email input {
+        width: 300px;
+    }
+    .footer .newsletter .email button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .footer .box .left .categories div p {
+        font-size: 18px;
+    }
+    .footer .contact div {
+        font-size: 15px;
+    }
+}
+@media (max-width:768px) {
+    nav div.bar{
+        display: block;
+    }
+    nav ul {
+        opacity: 0;
+        position: absolute;
+        background-color: var(--base-color);
+        flex-direction: column;
+        right: 0px;
+        padding: 30px 30px 10px;
+        text-align: center;
+        pointer-events: none;
+        border-radius: 10px;
+    }
+    nav ul.activeMenu {
+        opacity: 1;
+        pointer-events: all;
+    }
+    nav ul li{
+        margin: 10px 0;
+    }
+    .topHeadlines {
+        display: block;
+    }
+    .topHeadlines .right .topNews .news .img {
+        width: 220px;
+    }
+    .topHeadlines .right .topNews .news .text .title a p {
+        font-size: 18px;
+    }
+    .page2 .news .newsBox .newsCard {
+        width: calc(100% / 3 - 20px);
+    }
+    .footer .box {
+        grid-template-columns: none;
+    }
+    .footer .box .right{
+        grid-row-start: 1;
+        margin-bottom: 40px;
+    }
+    .footer .newsletter .email input {
+        width: 400px;
+    }
+    .footer .box .left {
+        justify-content: space-between;
+    }
+}
+@media (max-width:600px) {
+    .logo {
+        font-size: 35px;
+    }
+    .topHeadlines .left {
+        padding: 10px 0px;
+    }
+    .topHeadlines .right .topNews .news .img {
+        width: 150px;
+    }
+    .topHeadlines .right .topNews .news .text .title a p {
+        font-size: 14px;
+    }
+    .page2 .news .newsBox .newsCard {
+        width: calc(100% / 2 - 20px);
+    }
+    .footer .newsletter .email input {
+        width: 300px;
+        font-size: 14px;
+    }
+    .footer .newsletter .email button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+    .footer .newsletter p {
+        font-size: 22px;
+    }
+    .footer .box .left .categories > p {
+        font-size: 22px;
+    }
+    .footer .contact p {
+        font-size: 22px;
+    }
+    .footer .copyrights {
+        font-size: 14px;
+    }
+}
+@media (max-width:425px) {
+    nav div.bar {
+        right: 50px;
+    }
+    nav ul {
+        padding: 30px 10px 10px;
+    }
+    nav ul li {
+        margin: 5px 0px;
+    }
+    nav ul li a {
+        font-size: 14px;
+    }
+    .topHeadlines {
+        padding: 100px 20px 50px;
+    }
+    .page2 {
+        padding: 50px 20px;
+    }
+    .page2 .news .newsBox .newsCard {
+        width: 100%;
+        display: grid;
+    }
+    .page2 .news > .title h2 {
+        font-size: 30px;
+    }
+    .page2 .news .newsBox .newsCard .img{
+        height: 100%;
+        min-height: 150px;
+    }
+    .page2 .news .newsBox .newsCard .text .title a p {
+        font-size: 16px;
+    }
+    .footer .newsletter .email {
+        display: block;
+    }
+    .footer .newsletter .email button {
+        margin-top: 15px;
+    }
+    
+}
