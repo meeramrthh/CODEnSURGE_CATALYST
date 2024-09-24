@@ -301,18 +301,14 @@ nav ul li a{
     padding: 0px 15px 10px;
 }
 .topHeadlines .left .text .title a{
-    text-decoration: none;
-   
-    
+    text-decoration: none;   
 }
 .topHeadlines .left .text .title a h2{
     font-size: 25px;
     color:var(--text-color);
     letter-spacing: 1px;
     display: inline;
-    cursor: pointer;
-    
-    
+    cursor: pointer;   
 }
 .topHeadlines .left .text .title a h2:hover{
     text-decoration: none;
