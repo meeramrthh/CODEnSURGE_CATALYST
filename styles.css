@@ -131,12 +131,10 @@
     top: 20px;
     right: 20px;
     cursor: pointer;
-
 }
 #theme-switch svg{
     fill: var(--primary-color);
     cursor: pointer;
-
 } 
 #theme-switch svg:last-child{
     display: none;
@@ -169,7 +167,6 @@ body{
        
     }
 }
-
 /*google translate*/  
 #entertainmentMarquee {
 position: fixed;    width: 52%; /* Adjust width as needed */
@@ -206,7 +203,6 @@ position: fixed;    width: 52%; /* Adjust width as needed */
     animation: marquee 15s linear infinite;
     margin: 0; /* Remove default margin to prevent extra spacing */
     padding: 0; /* Remove default padding to prevent extra spacing */
-    
   }
   .title span {
     color: var(--accent-color);
@@ -235,8 +231,7 @@ position: fixed;    width: 52%; /* Adjust width as needed */
 .logo{
     font-size: 45px;
     font-weight: 700;
-    cursor: pointer;
-    
+    cursor: pointer;   
 }
 nav ul{
     display: flex;
