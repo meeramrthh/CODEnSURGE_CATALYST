@@ -276,7 +276,6 @@ nav ul li a{
     width: 100%;
     display: grid;
     grid-template-columns: 1.5fr 1fr;
-
 }
 .topHeadlines .left{
     padding: 10px 30px;
@@ -428,7 +427,6 @@ nav ul li a{
 .page2 .news .newsBox .newsCard .title a p:hover{
     text-decoration: none;
 }
-
 .footer{
     width: 100%;
     padding: 50px 50px 0px;
@@ -534,7 +532,6 @@ nav ul li a{
     padding: 20px;
     letter-spacing: 1px;
 }
-
 @media (max-width:1024px) {
     .topHeadlines .right .topNews .news .img {
         width: 150px;
