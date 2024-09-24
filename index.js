@@ -133,28 +133,9 @@ fetchData('general', 5).then(add_breakingNews).catch((error) => {
     breakingNews_desc.innerHTML = 'Error loading description';
 });
 
-//enterntaion marquee
-const add_entertainmentNews = (data) => {
-    if (!data || data.length === 0) {
-        console.error('No entertainment news data available');
-        return;
-    }
 
-    const entertainmentMarquee = document.getElementById('entertainmentMarquee');
 
-    data.forEach((element) => {
-        const newsItem = document.createElement('span');
-        newsItem.textContent = element.title;
-        entertainmentMarquee.appendChild(newsItem);
-    });
-};
 
-fetchData('entertainment', 5).then(add_entertainmentNews).catch((error) => {
-    console.error('Error fetching entertainment news:', error);
-    // Handle error gracefully (e.g., display an error message)
-    const entertainmentMarquee = document.getElementById('entertainmentMarquee');
-    entertainmentMarquee.innerHTML = '<p>An error occurred while fetching entertainment news.</p>';
-});
 
 const add_topNews = (data) => {
     if (!data || data.length === 0) {
