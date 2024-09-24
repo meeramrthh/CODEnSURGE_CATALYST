@@ -284,3 +284,38 @@ nav div.bar .close{
 nav div.bar.active .close{
     display: initial;
 }
+
+nav ul li{
+    list-style: none;
+    margin: 0 15px;
+    padding: 0 10px;
+    border-left: 1px solid var( --border-color);
+    border-right: 1px solid var( --border-color);
+    transition: 0.3s;
+}
+nav ul li:hover{
+    border-left: 1px solid var(--text-color);
+    border-right: 1px solid var(--text-color);
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--text-color);
+    letter-spacing: 1px;
+}
+.topHeadlines{
+    padding: 90px 50px 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+
+}
+.topHeadlines .left{
+    padding: 10px 30px;
+}
+.topHeadlines .left > .title{
+    font-size: 25px;
+    padding: 15px;
+    text-align: center;
+}
+
+.topHeadlines
