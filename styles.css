@@ -75,3 +75,17 @@
 .newsItem a:hover {
     color: #007BFF;
 }
+
+.newsItem img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+.newsItem p {
+    color: #666;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
