@@ -71,3 +71,7 @@
     text-decoration: none;
     color: #333;
 }
+
+.newsItem a:hover {
+    color: #007BFF;
+}
