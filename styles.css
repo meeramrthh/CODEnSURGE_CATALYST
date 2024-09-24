@@ -218,7 +218,6 @@ position: fixed;    width: 52%; /* Adjust width as needed */
 .topHeadlines .right .topNews::-webkit-scrollbar-thumb{
     background-color: var(--toplinesrth-color);
 }
-
 .top-bar {
     position: fixed;
     top: 80; /* Adjust this value to match the height of your main navbar */
@@ -226,9 +225,7 @@ position: fixed;    width: 52%; /* Adjust width as needed */
     right: 0;
     background-color: var(--accent-color); /* Blue background */
     padding: 1px;
-  
     }
-
   .marquee-text {
     overflow: hidden;
     white-space: nowrap;
@@ -237,13 +234,9 @@ position: fixed;    width: 52%; /* Adjust width as needed */
     padding: 0; /* Remove default padding to prevent extra spacing */
     
   }
-
-
   .title span {
     color: var(--accent-color);
   }
-
-
 .header{
     position: fixed;
     display: flex;
@@ -254,7 +247,6 @@ position: fixed;    width: 52%; /* Adjust width as needed */
     padding:  10px 50px;
     background-color: var(--base-color);
     transition: 0.3s;
-    
     margin-top: 20px; /*added margin*/
 }
 /*extra*/
@@ -262,8 +254,6 @@ position: fixed;    width: 52%; /* Adjust width as needed */
         font-size: 18px; /* Reduce font size */
         font-weight: 400; /* Reduce font weight */
     }
-
-
 .header.sticky{
     padding-block: 10px;
     box-shadow: inset 0 -1.5px 3px rgba(255,255,255,0.3);

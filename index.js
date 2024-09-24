@@ -166,7 +166,6 @@ const add_topNews = (data) => {
             </div>`;
         }
     });
-
     topNews.innerHTML = html;
 };
 
@@ -201,10 +200,8 @@ const add_sportsNews = (data) => {
             </div>`;
         }
     });
-
     sportsNews.innerHTML = html;
 };
-
 fetchData('sports', 10).then(add_sportsNews).catch((error) => {
     console.error('Error fetching data:', error);
     // Handle error gracefully (e.g., display an error message)
@@ -239,7 +236,6 @@ const add_techNews = (data) => {
 
     techNews.innerHTML = html;
 };
-
 fetchData('technology', 20).then(add_techNews).catch((error) => {
     console.error('Error fetching data:', error);
     techNews.innerHTML = '<p>An error occurred while fetching news.</p>';
@@ -271,7 +267,6 @@ const add_businessNews = (data) => {
             </div>`;
         }
     });
-
     businessNews.innerHTML = html;
 };
 
@@ -289,43 +284,29 @@ function updateClock() {
     const timeElement = document.getElementById('live-time');
     timeElement.textContent = formattedTime;
   }
-  
   setInterval(updateClock, 1000); // Update every second
-
   const emailInput = document.getElementById('email-input');
 const subscribeButton = document.getElementById('subscribe-button');
-
 subscribeButton.addEventListener('click', handleSubscription);
-
 function handleSubscription() {
   const email = emailInput.value;
-
   // Validate the email address
   if (!isValidEmail(email)) {
     alert('Please enter a valid email address.');
     return;
   }
-
   console.log('Email subscribed:', email);
-
   emailInput.value = '';
   alert('Thank you for subscribing!');
 }
-
-
 function isValidEmail(email) {
   // Implement your email validation logic here
   // For a basic check, you can use a regular expression
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailRegex.test(email);
 }
-
 //theme
 var icon = document.getElementById("icon");
         icon.onclick = function(){
             document.body.classList.toggle("lightmode");
         }
-        
-
-  //search
- 
