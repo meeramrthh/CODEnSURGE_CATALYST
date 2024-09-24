@@ -127,7 +127,6 @@ const add_breakingNews = (data) => {
 
 fetchData('general', 5).then(add_breakingNews).catch((error) => {
     console.error('Error fetching data:', error);
-    // Handle error gracefully (e.g., display an error message)
     breakingImg.innerHTML = '<p>An error occurred while fetching news.</p>';
     breakingNews_title.innerHTML = 'Error loading title';
     breakingNews_desc.innerHTML = 'Error loading description';
@@ -173,7 +172,6 @@ const add_topNews = (data) => {
 
 fetchData('general', 20).then(add_topNews).catch((error) => {
     console.error('Error fetching data:', error);
-    // Handle error gracefully (e.g., display an error message)
     topNews.innerHTML = '<p>An error occurred while fetching news.</p>';
 });
 
@@ -225,7 +223,6 @@ const add_techNews = (data) => {
             title = element.title.slice(0, 100) + '...';
         }
 
-        // Check if both image and title are available
         if (element.urlToImage && element.title) {
             html += `<div class="newsCard">
                 <div class="img">
@@ -245,7 +242,6 @@ const add_techNews = (data) => {
 
 fetchData('technology', 20).then(add_techNews).catch((error) => {
     console.error('Error fetching data:', error);
-    // Handle error gracefully (e.g., display an error message)
     techNews.innerHTML = '<p>An error occurred while fetching news.</p>';
 });
 
@@ -281,7 +277,6 @@ const add_businessNews = (data) => {
 
 fetchData('business', 15).then(add_businessNews).catch((error) => {
     console.error('Error fetching data:', error);
-    // Handle error gracefully (e.g., display an error message)
     businessNews.innerHTML = '<p>An error occurred while fetching news.</p>';
 });
 
@@ -311,11 +306,8 @@ function handleSubscription() {
     return;
   }
 
-  // Handle the subscription process (e.g., send an email, update database)
-  // Replace this with your actual subscription logic
   console.log('Email subscribed:', email);
 
-  // Clear the input field and provide feedback to the user
   emailInput.value = '';
   alert('Thank you for subscribing!');
 }
