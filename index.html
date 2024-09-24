@@ -1,42 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"
         integrity="sha512-HHsOC+h3najWR7OKiGZtfhFIEzg5VRIPde0kB0bG2QRidTQqf+sbfcxCTB16AcFB93xMjnBIKE29/MjdzXE+qw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/styles.css">
     <script type="text/javascript" src="lightmode.js" defer></script>
     <title>News Website</title>
-
 </head>
+
 <body>
+
     <div class="header">
         <div class="logo">
             NEWS
         </div>
         <nav>
+
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#sportNews">Sports</a></li>
+                <li><a href="#sportsNews">Sports</a></li>
                 <li><a href="#businessNews">Business</a></li>
-                <li><a href="#techtNews">Technology</a></li>
+                <li><a href="#techNews">Technology</a></li>
             </ul>
             <div class="bar">
                 <i class="open fa-solid fa-bars-staggered"></i>
                 <i class="close fa-solid fa-xmark"></i>
             </div>
-        </nav>
 
-        <button id="theme-switch">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
-        
-        </button>
-        <div id="google_element"></div>
-    </div>
+          
+
+            </nav>
+           
+    <button id="theme-switch">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+    
+    </button>
+    <div id="google_element"></div>
+</div>
+    
+
     <header>
         <div class="top-bar">
             <div class="marquee-text">
@@ -44,58 +52,142 @@
             </div>
         </div>
     </header>
-   <div class="topHeadlines">
-    <div class="left">
-        <div class="title">
-            <h2>Breaking <span>News</span></h2>
+    </nav>
+    
+    <div class="topHeadlines">
+
+        <div class="left">
+            <div class="title">
+                <h2>Breaking <span>News</span></h2>
+            </div>
+            <div class="img" id="breakingImg">
+            </div>
+            <div class="text" id="breakingNews">
+                <div class="title">
+
+                </div>
+                <div class="description">
+                </div>
+            </div>
         </div>
-        <div class="img" id="breakingImg"></div>
-        <div class="text" id="breakingNews">
-            <div class="title"></div>
-            <div class="description"></div>
+
+        <div class="right">
+            <div class="title">
+                <h2>Top <span>Headlines</span></h2>
+            </div>
+            <div class="topNews">
+
+            </div>
+
         </div>
     </div>
-
-    <div class="right">
+    <!-- marquee for entertainment
+    <div class="news" id="entertainmentNews">
         <div class="title">
-            <h2>Top <span>Headlines</span></h2>
         </div>
-        <div class="topNews"></div>
-    </div>
+        <marquee id="entertainmentMarquee" direction="scroll-left" behavior="scroll">
+        </marquee>
+    </div> -->
 
-   </div>
-<!--page 2-->
-<div class="seatch-bar flex">
-    <input id="search-text" type="text" class="news-input" placeholder="e.g. Science">
-    <button id="search-button" class="search-button">Search</button>
-</div>
-<div id="search-results"></div>
-
-<div class="page2">
-    <div class="news" id="sportsNews">
-        <div class="title">
-     <h2>Sports <span>News</span> |</h2>
-        </div>
-        <div class="newsBox">
-            
-        </div>
+    <!--page 2-->
+    <div class="search-bar flex">
+        <input id="search-text" type="text" class="news-input" placeholder="e.g. Science">
+        <button id="search-button" class="search-button">Search</button>
     </div>
-    <div class="news" id="businessNews">
-        <div class="=title">
-            <h2>Stock <span>News</span></h2>
+    
+    <!-- The search results will be placed here -->
+    <div id="search-results"></div>
+<!--     
+  page 2 -->
+    <div class="page2">
+        <div class="news" id="sportsNews">
+            <div class="title">
+         <h2>Sports <span>News</span> |</h2>
+            </div>
+            <div class="newsBox">
+            </div>
         </div>
-        <div class="newsBox">
+        <div class="news" id="businessNews">
+            <div class="title">
+                <h2>Business <span>News</span> |</h2>
+            </div>
+            <div class="newsBox">
             </div>
         </div>
         <div class="news" id="techNews">
             <div class="title">
-                <h2>Technology<span>News</span></h2>
+                <h2>Technology <span>News</span> |</h2>
             </div>
-        
+            <div class="newsBox">
+            </div>
         </div>
-        <div class="newsBox"></div>
-</div>
-</body>
-</html>
 
-<!-- 
+        <!--this start CAROUSEL-->
+
+
+
+
+    </div>
+
+    <div class="footer">
+        <div class="box">
+            <div class="left">
+                <div class="categories">
+                    <p>Categories</p>
+                    <div>
+                        <a href="#sportsNews"><p>Sports</p></a>
+                    </div>
+                    <div>
+                        <a href="#businessNews"><p>Business</p></a>
+                    </div>
+                    <div>
+                        <a href="#techNews"><p>Technology</p></a>
+                    </div>
+                </div>
+                <div class="contactUs">
+                    <div class="contact">
+                        <p>Contact Us</p>
+                        <div>Phone No. - <span>7695992879</span></div>
+                        <div>Email - <span>meeramrthh@gmail.com</span></div>
+                        <div>Address - <span>Chennai, India</span></div>
+                    </div>
+                    <div class="icon">
+                        <a href="www.facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="newsletter">
+                    <p>Subscribe to Our Newsletter</p>
+                    <div class="email">
+                        <input type="email" id="email-input" placeholder="Enter Your Email Here">
+                        <button id="subscribe-button">Subscribe</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="copyrights">
+            Copyrights &copy; 2024 NEWS
+        </div>
+    </div>
+
+
+
+
+
+    <script src="/index.js"></script>
+ 
+   <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+<script>
+    function loadGoogleTranslate(){
+        new google.translate.TranslateElement(
+            "google_element"
+        );
+    }
+</script>
+</body>
+
+</html>
