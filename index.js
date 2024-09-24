@@ -176,40 +176,40 @@ fetchData('general', 20).then(add_topNews).catch((error) => {
 });
 
 
-// const add_sportsNews = (data) => {
-//     let html = '';
-//     let title = '';
+const add_sportsNews = (data) => {
+    let html = '';
+    let title = '';
 
-//     data.forEach((element) => {
-//         if (!element.title || element.title.length < 100) {
-//             title = element.title || 'No Title Available';
-//         } else {
-//             title = element.title.slice(0, 100) + '...';
-//         }
+    data.forEach((element) => {
+        if (!element.title || element.title.length < 100) {
+            title = element.title || 'No Title Available';
+        } else {
+            title = element.title.slice(0, 100) + '...';
+        }
 
-//         // Check if both image and title are available
-//         if (element.urlToImage && element.title) {
-//             html += `<div class="newsCard">
-//                 <div class="img">
-//                     <img src=${element.urlToImage} alt="image">
-//                 </div>
-//                 <div class="text">
-//                     <div class="title">
-//                         <a href=${element.url} target="_blank"><p>${title}</p></a>
-//                     </div>
-//                 </div>
-//             </div>`;
-//         }
-//     });
+        // Check if both image and title are available
+        if (element.urlToImage && element.title) {
+            html += `<div class="newsCard">
+                <div class="img">
+                    <img src=${element.urlToImage} alt="image">
+                </div>
+                <div class="text">
+                    <div class="title">
+                        <a href=${element.url} target="_blank"><p>${title}</p></a>
+                    </div>
+                </div>
+            </div>`;
+        }
+    });
 
-//     sportsNews.innerHTML = html;
-// };
+    sportsNews.innerHTML = html;
+};
 
-// fetchData('sports', 10).then(add_sportsNews).catch((error) => {
-//     console.error('Error fetching data:', error);
-//     // Handle error gracefully (e.g., display an error message)
-//     sportsNews.innerHTML = '<p>An error occurred while fetching news.</p>';
-// });
+fetchData('sports', 10).then(add_sportsNews).catch((error) => {
+    console.error('Error fetching data:', error);
+    // Handle error gracefully (e.g., display an error message)
+    sportsNews.innerHTML = '<p>An error occurred while fetching news.</p>';
+});
 
 //tech
 const add_techNews = (data) => {
