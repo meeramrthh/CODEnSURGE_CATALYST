@@ -1,29 +1,6 @@
 let breakingImg = document.querySelector('#breakingImg')
 let breakingNews_title = document.querySelector('#breakingNews .title')
 let breakingNews_desc = document.querySelector('#breakingNews .description')
-let b
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
