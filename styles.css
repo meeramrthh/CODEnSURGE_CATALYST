@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 *{
-    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
 /* search*/
 /* Styles for the search bar */
 .search-bar {
@@ -15,7 +13,6 @@
     margin-bottom: 20px;
     margin-top: 20px;
 }
-
 .news-input {
     padding: 10px;
     border: 1px solid #ccc;
@@ -41,11 +38,9 @@
     margin-left: 10px;
     cursor: pointer;
 }
-
 .search-button:hover {
     background-color: var(--card-color);
 }
-
 /* Styles for the news result blocks */
 #search-results {
     display: grid;
@@ -54,7 +49,6 @@
     margin: 20px;
     padding: 0;
 }
-
 .newsItem {
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -65,38 +59,31 @@
     transition: transform 0.3s ease;
     cursor: pointer;
 }
-
 .newsItem:hover {
     transform: scale(1.05);
 }
-
 .newsItem h3 {
     font-size: 18px;
     margin-bottom: 10px;
 }
-
 .newsItem a {
     text-decoration: none;
     color: #333;
 }
-
 .newsItem a:hover {
     color: #007BFF;
 }
-
 .newsItem img {
     width: 100%;
     height: auto;
     margin-top: 10px;
     border-radius: 8px;
 }
-
 .newsItem p {
     color: #666;
     margin-top: 10px;
     font-size: 14px;
 }
-
 /*mode*/
 :root{
     --base-color: #0b0b11;
@@ -132,7 +119,6 @@
     --footer-color-item: #3d3e41;
     --theme-bg: #e8e9ed;
 }
-
 #theme-switch{
     height: 50px;
     width: 50px;
@@ -147,25 +133,20 @@
     cursor: pointer;
 
 }
-
 #theme-switch svg{
     fill: var(--primary-color);
     cursor: pointer;
 
 } 
-
 #theme-switch svg:last-child{
     display: none;
 }
-
 .lightmode #theme-switch svg:first-child{
     display: none;
 }
-
 .lightmode #theme-switch svg:last-child{
     display: block;
 }
-
 #icon{
     width: 30px; 
     cursor: pointer;
@@ -187,21 +168,14 @@ body{
        
        
     }
-
 }
 
-
-/*google translate*/
-
-  
-
+/*google translate*/  
 #entertainmentMarquee {
 position: fixed;    width: 52%; /* Adjust width as needed */
     animation-iteration-count: 3; /* Adjust the value to control the number of loops */
   margin-left: 100px;
 }
-
-
 ::-webkit-scrollbar{
     width: 8px;
 }
